@@ -13,7 +13,7 @@ echo "# Install Zsh Syntax Highlighting"
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 echo
 echo "# Download Zshrc"
-sudo curl -s https://gist.githubusercontent.com/WeeHong/4bf71e6f4cdb0efd5b289c89eed7d302/raw/e9531e9db3b2c178c4f0d7de35d94f48f6fe1cb2/.zshrc > "$HOME/.zshrc"
+sudo curl -s https://raw.githubusercontent.com/WeeHong/WSL-Bash-Script/main/.zshrc > "$HOME/.zshrc"
 echo
 chsh -s $(which zsh)
 zsh
