@@ -1,8 +1,8 @@
 # My-Bash-Script
+This is the script what I use for Linux environment
 
-# Script
-1. ZSH Installation
-  - Zsh
+## Scripts
+- Zsh Installation
   - Oh My Zsh
   - Powerlevel10k
   - Zsh Syntax Highlighting
