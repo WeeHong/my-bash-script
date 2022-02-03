@@ -80,8 +80,9 @@ else
     {
         echo '# GoLang'
         echo "export GOROOT=${GOROOT}"
-        echo 'export PATH=$GOROOT:$PATH'
+        echo 'export PATH=$GOROOT/bin:$PATH'
         echo "export GOPATH=$GOPATH"
+        echo 'export PATH=$GOPATH/bin:$PATH'
     } >> "$shell_profile"
 fi
 
