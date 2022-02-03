@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Define GOROOT AND GOPATH path
 [ -z "$GOROOT" ] && GOROOT="$HOME/.go"
