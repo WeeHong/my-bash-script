@@ -10,7 +10,8 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/m
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/golang/golang-installer.sh)"
 ```
-Then run `source ~/.zshrc`, **(I am using Zsh)**
+Then run `source ~/.zshrc`
+*Caveats: Based on your shell*
 
 ## Scripts Content
 - Zsh Installation
