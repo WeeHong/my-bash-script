@@ -16,4 +16,5 @@ export PATH=$PATH:/usr/local/go/bin
 # export GOPATH="/mnt/c/Users/${user}/directory/to/your/golang/workspace"
 }
 
-(cd ~ || exit && golang_installation)
+(cd ~ || exit)
+golang_installation
