@@ -5,6 +5,8 @@ This is the script what I use for Linux environment
 #### Install Zsh
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/zsh/zsh_install.sh)"
+```
+
 #### Install Golang
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/golang/golang-installer.sh)"
