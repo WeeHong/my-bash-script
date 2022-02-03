@@ -4,12 +4,13 @@ This is the script what I use for Linux environment
 ## How to run the scripts
 #### Install Zsh
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/zsh/zsh_install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/zsh/zsh_install.sh)"
 ```
 #### Install Golang
 ```sh
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/golang/golang-installer.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/golang/golang-installer.sh)"
 ```
+Then run `source ~/.zshrc`, **(I am using Zsh)**
 
 ## Scripts Content
 - Zsh Installation
