@@ -11,4 +11,4 @@ To resolve this issue, please do the following steps,
     enabled=false # enable launch of Windows binaries; default is true
     appendWindowsPath=false # append Windows path to $PATH variable; default is true
     ```
-    - `wsl --shutdown` and restart your WSL.
+    - `wsl --shutdown` and restart your WSL OR open `services.msc` and search for `LxssManager` and restart
