@@ -1,6 +1,7 @@
 #!/bin/bash
-cd ~ || exit
+(cd ~ && golang_installation)
 
+function golang_installation() {
 # Extract the latest Golang version
 RESPONSE_BODY=$(curl -s -w "\n%{http_code}" https://go.dev/VERSION\?m=text)
 GOLANG_VERSION=$(echo "$RESPONSE_BODY" | sed -E 's/[0-9]{3}$//')
@@ -15,3 +16,4 @@ sudo rm -rf /usr/local/go && tar -C /usr/local -xzf "$GOLANG_VERSION".linux-amd6
 export PATH=$PATH:/usr/local/go/bin
 
 # export GOPATH="/mnt/c/Users/${user}/directory/to/your/golang/workspace"
+}
