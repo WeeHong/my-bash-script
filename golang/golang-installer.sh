@@ -2,7 +2,7 @@
 
 # Define GOROOT AND GOPATH path
 [ -z "$GOROOT" ] && GOROOT="$HOME/.go"
-[ -z "$GOPATH" ] && GOPATH="$HOME/go"
+[ -z "$GOPATH" ] && GOPATH="$HOME/workspace/go"
 
 # Define Operating System and Architecture
 OS="$(uname -s)"
@@ -85,3 +85,5 @@ else
         echo 'export PATH=$GOPATH/bin:$PATH'
     } >> "$shell_profile"
 fi
+
+mkdir -p "${GOPATH}/"{src,pkg,bin}
