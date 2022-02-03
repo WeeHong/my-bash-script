@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define GOROOT AND GOPATH path
-[ -z "$GOROOT" ] && GOROOT="$HOME/.go"
+[ -z "$GOROOT" ] && GOROOT="/usr/local/go"
 [ -z "$GOPATH" ] && GOPATH="$HOME/workspace/go"
 
 # Define Operating System and Architecture
@@ -80,9 +80,8 @@ else
     {
         echo '# GoLang'
         echo "export GOROOT=${GOROOT}"
-        echo 'export PATH=$GOROOT/bin:$PATH'
+        echo "export PATH=$GOROOT:$PATH"
         echo "export GOPATH=$GOPATH"
-        echo 'export PATH=$GOPATH/bin:$PATH'
     } >> "$shell_profile"
 fi
 
