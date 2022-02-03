@@ -3,12 +3,6 @@
 # Path to your oh-my-zsh installation.
 
 export ZSH=$HOME/.oh-my-zsh
-export SDKMAN_DIR=$HOME/.sdkman
-export NVM_DIR=$HOME/.nvm
-export PATH=/opt/firefox/firefox:$PATH
-export PATH=/usr/local/go/bin:$PATH
-export PATH=$HOME/.dotnet/tools/:$PATH
-export GOPATH=$default_location/workspace/go
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,36 +100,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-function gacp() {
-    git add .
-    git commit -m "$1"
-    git push
-}
-
-function align() {
-  identity=$(sleep 3; xdotool getactivewindow)
-  winname=$(printf 0x0%x $identity)
-  IFS="x" read sw sh < <(xdpyinfo | grep dimensions | grep -o "[0-9x]*" | head -n1)
-  read wx wy ww wh < <(wmctrl -lG | grep "$winname" | sed "s/^[^ ]* *[^ ]* //;s/[^0-9 ].*//;")
-  wmctrl -i -r $winname -e 0,$(($sw/2-$ww/2)),$(($sh/2-$wh/2)),$ww,$wh
-}
-
-function restart() {
-  shutdown -r now
-}
-
-function open() {
-  if [[ -z "$1" ]] then
-    xdg-open .
-  else
-    xdg-open "$1"
-  fi
-}
-
-function forward() {
-  ssh -i ~/.ssh/do -R 3000:localhost:3000 root@local-api.weehong.xyz
-}
-
 alias ya="yarn add"
 alias yb="yarn build"
 alias ys="yarn start"
@@ -155,7 +119,7 @@ alias gpl="git pull"
 alias gb="git branch"
 alias gc="git checkout"
 alias gca="git checkout master"
-alias gp-f="git push -u origin HEAD"
+alias gp-h="git push -u origin HEAD"
 
 alias cf="clang-format"
 
@@ -168,9 +132,3 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# SDKMan
-[[ -s "/home/weehong/.sdkman/bin/sdkman-init.sh" ]] && source "/home/weehong/.sdkman/bin/sdkman-init.sh"
-
-# NVM
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
