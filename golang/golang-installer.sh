@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Extract the latest Golang version
 RESPONSE_BODY=$(curl -s -w "\n%{http_code}" https://go.dev/VERSION\?m=text)
 GOLANG_VERSION=$(echo "$RESPONSE_BODY" | sed -E 's/[0-9]{3}$//')
@@ -14,5 +14,3 @@ GOLANG_VERSION=$(echo "$RESPONSE_BODY" | sed -E 's/[0-9]{3}$//')
 
 # Add Golang to the Path environment variable
 export PATH=$PATH:/usr/local/go/bin
-
-# export GOPATH="/mnt/c/Users/${user}/directory/to/your/golang/workspace"
