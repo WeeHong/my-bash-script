@@ -16,6 +16,9 @@ echo
 echo "# Download Zshrc"
 sudo curl -s https://raw.githubusercontent.com/WeeHong/WSL-Bash-Script/main/zsh/.zshrc > "$HOME/.zshrc"
 echo
+echo "# Download p10k Configuration"
+sudo curl -s https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/zsh/.p10k.zsh > "$HOME/.p10k.zsh"
+echo
 chsh -s $(which zsh)
 zsh
 source "$HOME/.zshrc"
