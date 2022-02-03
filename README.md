@@ -8,7 +8,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/mai
 ```
 #### Install Golang
 ```sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/golang/golang-installer.sh)"
+sh -c "$(curl -O https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/golang/golang-installer.sh)"
 ```
 
 ## Scripts Content
