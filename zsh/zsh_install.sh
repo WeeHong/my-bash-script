@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 sudo apt-get update -y
 sudo apt-get install zsh -y
 echo "# Install Oh My Zsh"
