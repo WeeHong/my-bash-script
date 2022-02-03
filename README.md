@@ -8,7 +8,7 @@ curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/zsh/zsh
 ```
 #### Install Golang
 ```bash
-curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/golang/golang-installer.sh | bash
+curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/golang/golang-installer.sh | zsh
 ```
 Then run `source ~/.zshrc`
 <br />*Caveats: Based on your shell*
