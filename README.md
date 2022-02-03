@@ -7,3 +7,4 @@ This is the script what I use for Linux environment
   - Powerlevel10k
   - Zsh Syntax Highlighting
   - Zsh Autosuggestions
+  - My personal .zshrc configuration
