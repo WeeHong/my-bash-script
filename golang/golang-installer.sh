@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Define GOROOT AND GOPATH path
 [ -z "$GOROOT" ] && GOROOT="$HOME/.go"
@@ -87,5 +87,3 @@ else
 fi
 
 mkdir -p "${GOPATH}/"{src, pkg, bin}
-
-source "$shell_profile"
