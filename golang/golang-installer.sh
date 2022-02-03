@@ -13,7 +13,6 @@ GOLANG_VERSION=$(echo "$RESPONSE_BODY" | sed -E 's/[0-9]{3}$//')
   && sudo rm -rf "$GOLANG_VERSION".linux-amd64.tar.gz)
 
 # Add Golang to the Path environment variable
-echo -n 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.zshrc
-. $HOME/.zshrc
+export PATH=$PATH:/usr/local/go
 
 # export GOPATH="/mnt/c/Users/${user}/directory/to/your/golang/workspace"
