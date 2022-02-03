@@ -40,11 +40,11 @@ if [ -z "$PLATFORM" ]; then
 fi
 
 # Checking Shell
-if [ -n "$($SHELL -c 'echo $ZSH_VERSION')" ]; then
+if [ -n "$('echo $ZSH_VERSION')" ]; then
     shell_profile="$HOME/.zshrc"
-elif [ -n "$($SHELL -c 'echo $BASH_VERSION')" ]; then
+elif [ -n "$('echo $BASH_VERSION')" ]; then
     shell_profile="$HOME/.bashrc"
-elif [ -n "$($SHELL -c 'echo $FISH_VERSION')" ]; then
+elif [ -n "$('echo $FISH_VERSION')" ]; then
     shell="fish"
     if [ -d "$XDG_CONFIG_HOME" ]; then
         shell_profile="$XDG_CONFIG_HOME/fish/config.fish"
