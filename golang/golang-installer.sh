@@ -15,6 +15,7 @@ GOLANG_VERSION=$(echo "$RESPONSE_BODY" | sed -E 's/[0-9]{3}$//')
 # Add Golang to the Path environment variable
 export PATH=$PATH:/usr/local/go/bin
 
+echo -n 'export PATH=$PATH:/usr/local/go/bin' >> $HOME/.zshrc
 . $HOME/.zshrc
 
 # export GOPATH="/mnt/c/Users/${user}/directory/to/your/golang/workspace"
