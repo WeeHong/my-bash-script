@@ -1,4 +1,3 @@
-#!/bin/bash
 cd ~ || exit
 
 # Extract the latest Golang version
