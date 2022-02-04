@@ -88,6 +88,8 @@ fi
 
 mkdir -p "${GOPATH}/"{src,pkg,bin}
 
+exec zsh
+
 # Checking Shell
 if [ -n "echo $ZSH_VERSION" ]; then
     echo "Running ZSH ..."
