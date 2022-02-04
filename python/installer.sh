@@ -67,13 +67,16 @@ echo "Download Python3"
 # Installing Python3
 echo "Installing Python3"
 (cd ~ \
+  && mkdir -p $PYTHONROOT \
   && tar -C $PYTHONROOT -xvf Python-$PYTHON_VERSION.tgz \
-  && cd Python-$PYTHON_VERSION \
+  && cd $PYTHONROOT/Python-$PYTHON_VERSION \
   && ./configure --with-ensurepip=install \
   && make -j8 \
   && sudo make install \
-  && alias python3=python3.10)
-  
+  && alias python3=python3.10 \
+  && cd ~ \
+  && rm -rf Python-$PYTHON_VERSION.tgz)
+
 # Checking Shell
 echo "Checking Shell"
 if [ -n "echo $ZSH_VERSION" ]; then
