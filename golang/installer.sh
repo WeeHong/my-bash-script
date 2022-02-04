@@ -90,9 +90,9 @@ mkdir -p "${GOPATH}/"{src,pkg,bin}
 
 # Checking Shell
 if [ -n "echo $ZSH_VERSION" ]; then
-    zsh custom_script.sh
+    curl https://raw.githubusercontent.com/WeeHong/my-bash-script/main/golang/zsh.sh | zsh
 elif [ -n "echo $BASH_VERSION" ]; then
-    sh custom_script.sh
+    curl https://raw.githubusercontent.com/WeeHong/my-bash-script/main/golang/zsh.sh | bash
 elif [ -n "echo $FISH_VERSION" ]; then
     shell="fish"
     if [ -d "$XDG_CONFIG_HOME" ]; then
