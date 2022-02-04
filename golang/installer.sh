@@ -88,4 +88,4 @@ fi
 
 mkdir -p "${GOPATH}/"{src,pkg,bin}
 
-. $HOME/.zshrc
+exec zsh . $HOME/.zshrc
