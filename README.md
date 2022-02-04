@@ -4,7 +4,7 @@ This is the script what I use for Linux environment
 ## How to run the scripts
 #### Install Zsh
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/zsh/zsh_install.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/My-Bash-Script/main/zsh/install.sh)"
 ```
 
 #### Install Golang
