@@ -88,4 +88,16 @@ fi
 
 mkdir -p "${GOPATH}/"{src,pkg,bin}
 
-source . $HOME/.zshrc
+# Checking Shell
+if [ -n "echo $ZSH_VERSION" ]; then
+    zsh custom_script.sh
+elif [ -n "echo $BASH_VERSION" ]; then
+    sh custom_script.sh
+elif [ -n "echo $FISH_VERSION" ]; then
+    shell="fish"
+    if [ -d "$XDG_CONFIG_HOME" ]; then
+        shell_profile="$XDG_CONFIG_HOME/fish/config.fish"
+    else
+        shell_profile="$HOME/.config/fish/config.fish"
+    fi
+fi
