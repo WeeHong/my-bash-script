@@ -86,4 +86,4 @@ else
     } >> "$shell_profile"
 fi
 
-mkdir -p "${GOPATH}/"{src, pkg, bin}
+mkdir -p "${GOPATH}/"{src,pkg,bin}
