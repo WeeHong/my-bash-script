@@ -102,7 +102,7 @@ if [ "$shell" == "fish" ]; then
 else
     {
         echo '# Python'
-        echo "export PYTHONROOT=${GOROOT}"
+        echo "export PYTHONROOT=${PYTHONROOT}"
         echo 'export PATH=$PYTHONROOT/bin:$PATH'
     } >> "$shell_profile"
 fi
