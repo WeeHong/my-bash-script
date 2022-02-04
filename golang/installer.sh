@@ -87,3 +87,5 @@ else
 fi
 
 mkdir -p "${GOPATH}/"{src,pkg,bin}
+
+. ./.zshrc
