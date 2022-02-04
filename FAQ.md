@@ -12,3 +12,5 @@ To resolve this issue, please do the following steps,
     appendWindowsPath=false # append Windows path to $PATH variable; default is true
     ```
     - `wsl --shutdown` and restart your WSL OR open `services.msc` and search for `LxssManager` and restart
+1. I'm getting an error, `run-detectors: unable to find an interpreter for ...`
+    - Run `sudo update-binfmts --disable cli` to resolve the issue.
