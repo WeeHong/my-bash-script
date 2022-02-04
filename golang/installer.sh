@@ -91,10 +91,10 @@ mkdir -p "${GOPATH}/"{src,pkg,bin}
 # Checking Shell
 if [ -n "echo $ZSH_VERSION" ]; then
     echo "Running ZSH ..."
-    curl https://raw.githubusercontent.com/WeeHong/my-bash-script/main/golang/zsh.sh | zsh
+    zsh -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/golang/zsh.sh)"
 elif [ -n "echo $BASH_VERSION" ]; then
     echo "Running Bash ..."
-    curl https://raw.githubusercontent.com/WeeHong/my-bash-script/main/golang/zsh.sh | bash
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/golang/bash.sh)"
 elif [ -n "echo $FISH_VERSION" ]; then
     shell="fish"
     if [ -d "$XDG_CONFIG_HOME" ]; then
