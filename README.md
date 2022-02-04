@@ -11,6 +11,8 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/m
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/golang/installer.sh)"
 ```
+Then run `source ~/.zshrc`
+<br />*Caveats: Based on your shell*
 
 #### Install Python3
 ```bash
