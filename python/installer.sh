@@ -68,10 +68,10 @@ echo "Download Python3"
 echo "Installing Python3"
 (cd ~ \
   && tar -C $PYTHONROOT -xvf Python-$PYTHON_VERSION.tgz \
-  && cd Python-$PYTHON_VERSION
-  && ./configure --with-ensurepip=install
-  && make -j8
-  && sudo make install
+  && cd Python-$PYTHON_VERSION \
+  && ./configure --with-ensurepip=install \
+  && make -j8 \
+  && sudo make install \
   && alias python3=python3.10)
   
 # Checking Shell
