@@ -24,6 +24,11 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/m
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/clang-format/installer.sh)"
 ```
 
+#### Install Sdkman
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/sdkman/installer.sh)"
+```
+
 ## Scripts Content
 - Zsh Installation
   - Oh My Zsh
