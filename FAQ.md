@@ -14,3 +14,6 @@ To resolve this issue, please do the following steps,
     - `wsl --shutdown` and restart your WSL OR open `services.msc` and search for `LxssManager` and restart
 1. I'm getting an error, `run-detectors: unable to find an interpreter for ...`
     - Run `sudo update-binfmts --disable cli` to resolve the issue.
+
+1. Permission issue to install `yo` package
+    - https://github.com/yeoman/yeoman.io/issues/282#issuecomment-64543114
