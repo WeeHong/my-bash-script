@@ -63,14 +63,14 @@ echo "Download Python3"
 
 # Define GOROOT AND GOPATH path
 FOLDER_VERSION=${PYTHON_VERSION%.*}
-[ -z "$PYTHONROOT" ] && PYTHONROOT="/usr/local/python$FOLDER_VERSION"
+[ -z "$PYTHON_ROOT" ] && PYTHON_ROOT="/usr/local/python$FOLDER_VERSION"
 
 # Installing Python3
 echo "Installing Python3"
 (cd ~ \
-  && mkdir -p $PYTHONROOT \
-  && tar -C $PYTHONROOT -xvf Python-$PYTHON_VERSION.tgz \
-  && cd $PYTHONROOT/Python-$PYTHON_VERSION \
+  && mkdir -p $PYTHON_ROOT \
+  && tar -C $PYTHON_ROOT -xvf Python-$PYTHON_VERSION.tgz \
+  && cd $PYTHON_ROOT/Python-$PYTHON_VERSION \
   && ./configure --with-ensurepip=install \
   && make -j8 \
   && sudo make install \
@@ -98,13 +98,13 @@ touch "$shell_profile"
 if [ "$shell" == "fish" ]; then
     {
         echo '# Python'
-        echo "set PYTHONROOT '${PYTHONROOT}'"
+        echo "set PYTHON_ROOT '${PYTHON_ROOT}'"
     } >> "$shell_profile"
 else
     {
         echo '# Python'
-        echo "export PYTHONROOT=${PYTHONROOT}"
-        echo 'export PATH=$PYTHONROOT/bin:$PATH'
+        echo "export PYTHON_ROOT=${PYTHON_ROOT}"
+        echo 'export PATH=$PYTHON_ROOT/bin:$PATH'
     } >> "$shell_profile"
 fi
 
