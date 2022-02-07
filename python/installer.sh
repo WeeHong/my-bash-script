@@ -74,3 +74,6 @@ fi
 # Install Python3 PIP
 echo "Installing Python3 PIP"
 python3 -m pip install --upgrade pip
+
+chsh -s $(which zsh)
+zsh
