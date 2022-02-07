@@ -97,11 +97,13 @@ echo "Configuring shell profile in: $shell_profile"
 touch "$shell_profile"
 if [ "$shell" == "fish" ]; then
     {
+        echo -e '\n'
         echo '# Python'
         echo "set PYTHON_ROOT '${PYTHON_ROOT}'"
     } >> "$shell_profile"
 else
     {
+        echo -e '\n'
         echo '# Python'
         echo "export PYTHON_ROOT=${PYTHON_ROOT}"
         echo 'export PATH=$PYTHON_ROOT/bin:$PATH'
