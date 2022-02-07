@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Define GOROOT AND GOPATH path
-[ -z "$PYTHONROOT" ] && PYTHONROOT="/usr/local/python3"
-
 # Define Operating System and Architecture
 OS="$(uname -s)"
 ARCH="$(uname -m)"
@@ -64,6 +61,10 @@ PYTHON_VERSION=$(echo "$RESPONSE_BODY" | sed -E 's/[0-9]{3}$//')
 echo "Download Python3"
 (cd ~ && curl -OL "https://www.python.org/ftp/python/$PYTHON_VERSION/Python-$PYTHON_VERSION.tgz")
 
+# Define GOROOT AND GOPATH path
+FOLDER_VERSION=${PYTHON_VERSION%.*}
+[ -z "$PYTHONROOT" ] && PYTHONROOT="/usr/local/python$FOLDER_VERSION"
+
 # Installing Python3
 echo "Installing Python3"
 (cd ~ \
@@ -106,6 +107,8 @@ else
         echo 'export PATH=$PYTHONROOT/bin:$PATH'
     } >> "$shell_profile"
 fi
+
+alias python="python$FOLDER_VERSION"
 
 # Install Python3 PIP
 echo "Installing Python3 PIP"
