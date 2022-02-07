@@ -77,6 +77,8 @@ echo "Installing Python3"
   && alias python3=python3.10 \
   && cd ~ \
   && rm -rf Python-$PYTHON_VERSION.tgz)
+  
+alias python="python$FOLDER_VERSION"
 
 # Checking Shell
 echo "Checking Shell"
@@ -109,8 +111,6 @@ else
         echo 'export PATH=$PYTHON_ROOT/bin:$PATH'
     } >> "$shell_profile"
 fi
-
-alias python="python$FOLDER_VERSION"
 
 # Install Python3 PIP
 echo "Installing Python3 PIP"
