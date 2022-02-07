@@ -33,3 +33,4 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/m
   - My personal .zshrc configuration
 - Golang Installation
 - Python3 Installation
+- Sdkman Installation
