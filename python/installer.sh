@@ -77,7 +77,7 @@ echo "Installing Python3"
   && alias python3="python$FOLDER_VERSION" \
   && alias python="python$FOLDER_VERSION" \
   && cd ~ \
-  && rm -rf Python-$PYTHON_VERSION.tgz python$FOLDER_VERSION)
+  && rm -rf Python-$PYTHON_VERSION.tgz PYTHON_ROOT)
   
 alias python="python$FOLDER_VERSION"
 
