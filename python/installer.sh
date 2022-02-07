@@ -63,7 +63,7 @@ echo "Download Python3"
 
 # Define GOROOT AND GOPATH path
 FOLDER_VERSION=${PYTHON_VERSION%.*}
-[ -z "$PYTHON_ROOT" ] && PYTHON_ROOT="/usr/local/python$FOLDER_VERSION"
+[ -z "$PYTHON_ROOT" ] && PYTHON_ROOT="/usr/bin/python$FOLDER_VERSION"
 
 # Installing Python3
 echo "Installing Python3"
