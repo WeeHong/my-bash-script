@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define GOROOT AND GOPATH path
-[ -z "$PYTHONROOT" ] && PYTHONROOT="/usr/local/python"
+[ -z "$PYTHONROOT" ] && PYTHONROOT="/usr/local/python3"
 
 # Define Operating System and Architecture
 OS="$(uname -s)"
