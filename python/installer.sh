@@ -55,6 +55,24 @@ elif [ -n "echo $FISH_VERSION" ]; then
     fi
 fi
 
+echo "Configuring shell profile in: $shell_profile"
+touch "$shell_profile"
+if [ "$shell" == "fish" ]; then
+    {
+        echo -e '\n'
+        echo '# Python'
+        echo "alias python3="python$EXTRACT_VERSION""
+        echo "alias python="python$EXTRACT_VERSION"
+    } >> "$shell_profile"
+else
+    {
+        echo -e '\n'
+        echo '# Python'
+        echo "alias python3="python$EXTRACT_VERSION""
+        echo "alias python="python$EXTRACT_VERSION"
+    } >> "$shell_profile"
+fi
+
 # Install Python3 PIP
 echo "Installing Python3 PIP"
 python3 -m pip install --upgrade pip
