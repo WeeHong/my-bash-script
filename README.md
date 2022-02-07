@@ -19,11 +19,6 @@ Then run `source ~/.zshrc`
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/python/installer.sh)"
 ```
 
-#### Install Clang-Format
-```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/clang-format/installer.sh)"
-```
-
 #### Install Sdkman
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/sdkman/installer.sh)"
