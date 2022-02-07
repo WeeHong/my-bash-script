@@ -57,7 +57,7 @@ echo "Install require package"
 sudo apt-get install wget build-essential zlib1g-dev libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev libtk8.6 libgdm-dev libdb4o-cil-dev libpcap-dev -y
 
 # Extract the latest Python version
-RESPONSE_BODY=$(curl -s -w "\n%{http_code}" https://powerful-ridge-66112.herokuapp.com/python-stable)
+RESPONSE_BODY=$(curl -s -w "\n%{http_code}" https://python-version-crawler.herokuapp.com/python-stable)
 PYTHON_VERSION=$(echo "$RESPONSE_BODY" | sed -E 's/[0-9]{3}$//')
 
 # Download Python3
