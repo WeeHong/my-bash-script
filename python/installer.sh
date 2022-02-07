@@ -74,9 +74,10 @@ echo "Installing Python3"
   && ./configure --with-ensurepip=install \
   && make -j8 \
   && sudo make install \
-  && alias python3=python3.10 \
+  && alias python3="python$FOLDER_VERSION" \
+  && alias python="python$FOLDER_VERSION" \
   && cd ~ \
-  && rm -rf Python-$PYTHON_VERSION.tgz)
+  && rm -rf Python-$PYTHON_VERSION.tgz python$FOLDER_VERSION)
   
 alias python="python$FOLDER_VERSION"
 
@@ -95,22 +96,22 @@ elif [ -n "echo $FISH_VERSION" ]; then
     fi
 fi
 
-echo "Configuring shell profile in: $shell_profile"
-touch "$shell_profile"
-if [ "$shell" == "fish" ]; then
-    {
-        echo -e '\n'
-        echo '# Python'
-        echo "set PYTHON_ROOT '${PYTHON_ROOT}'"
-    } >> "$shell_profile"
-else
-    {
-        echo -e '\n'
-        echo '# Python'
-        echo "export PYTHON_ROOT=${PYTHON_ROOT}"
-        echo 'export PATH=$PYTHON_ROOT/bin:$PATH'
-    } >> "$shell_profile"
-fi
+# echo "Configuring shell profile in: $shell_profile"
+# touch "$shell_profile"
+# if [ "$shell" == "fish" ]; then
+#     {
+#         echo -e '\n'
+#         echo '# Python'
+#         echo "set PYTHON_ROOT '${PYTHON_ROOT}'"
+#     } >> "$shell_profile"
+# else
+#     {
+#         echo -e '\n'
+#         echo '# Python'
+#         echo "export PYTHON_ROOT=${PYTHON_ROOT}"
+#         echo 'export PATH=$PYTHON_ROOT/bin:$PATH'
+#     } >> "$shell_profile"
+# fi
 
 # Install Python3 PIP
 echo "Installing Python3 PIP"
