@@ -20,14 +20,14 @@ if [ "$shell" == "fish" ]; then
     {
         echo -e '\n'
         echo '# Python'
-        echo "alias python3="python$EXTRACT_VERSION""
-        echo "alias python="python$EXTRACT_VERSION"
+        echo "alias python3=python$EXTRACT_VERSION"
+        echo "alias python=python$EXTRACT_VERSION"
     } >> "$shell_profile"
 else
     {
         echo -e '\n'
         echo '# Python'
-        echo "alias python3="python$EXTRACT_VERSION""
-        echo "alias python="python$EXTRACT_VERSION"
+        echo "alias python3=python$EXTRACT_VERSION"
+        echo "alias python=python$EXTRACT_VERSION"
     } >> "$shell_profile"
 fi
