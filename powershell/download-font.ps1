@@ -1,6 +1,8 @@
 # This piece of function was copied from https://mickitblog.blogspot.com/2021/06/powershell-install-fonts.html
-# $FontUrl = "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip"
 # $FontUrl = "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip"
+
+$FontUrl = "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip"
+
 function Install-Font {
   param
   (
