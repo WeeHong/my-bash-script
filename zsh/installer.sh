@@ -1,5 +1,5 @@
 #!/bin/sh
-sudo apt-get update -y
+sudo apt-get -y upgrade && sudo apt-get -y update
 sudo apt-get install zsh -y
 echo "# Install Oh My Zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -22,3 +22,10 @@ echo
 chsh -s $(which zsh)
 zsh
 source "$HOME/.zshrc"
+
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo apt-get update
+sudo apt-get install git -y
+
+git config --global user.email "weehongayden.developer@hotmail.com"
+git config --global user.name "Wee Hong KOH"
