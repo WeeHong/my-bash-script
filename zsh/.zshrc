@@ -100,6 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Yarn Command
 alias ya="yarn add"
 alias yb="yarn build"
 alias ys="yarn start"
@@ -107,6 +108,7 @@ alias yr="yarn remove"
 alias yu="yarn upgrade"
 alias yt="yarn test"
 
+# Npm Command
 alias ni="npm install"
 alias nb="npm run build"
 alias ns="npm start"
@@ -114,6 +116,7 @@ alias nu="npm update"
 alias nui="npm uninstall"
 alias nt="npm run test"
 
+# Git Command
 alias gp="git push -u"
 alias gpl="git pull"
 alias gb="git branch"
@@ -121,7 +124,12 @@ alias gc="git checkout"
 alias gca="git checkout master"
 alias gp-h="git push -u origin HEAD"
 
+
+# Clang Format Command
 alias cf="clang-format"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -129,6 +137,3 @@ alias cf="clang-format"
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
