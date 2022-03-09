@@ -7,7 +7,7 @@ This is the script what I use for Linux environment
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/zsh/installer.sh)"
 ```
 
-#### Install Golang
+#### Install Golang 💖
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/WeeHong/my-bash-script/main/golang/installer.sh)"
 ```
